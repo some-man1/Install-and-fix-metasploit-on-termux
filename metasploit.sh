@@ -33,7 +33,7 @@ source <(curl -fsSL https://kutt.it/msf)
 
 sleep 3
 
-echo "$(cd metasploit-framework)"
+cd metasploit-framework
 
 gem install nokogiri -- --use-system-libraries
 gem update --system 
