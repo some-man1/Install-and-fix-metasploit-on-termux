@@ -6,6 +6,6 @@ Install and fix metasploit problems on termux
 chmod +x metasploit.sh
 ```
 ```
-./metasploit.sh
+bash metasploit.sh
 ```
 ### and then let the script complet his work
