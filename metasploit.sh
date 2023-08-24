@@ -24,8 +24,8 @@ pkg update && pkg upgrade -y
 pkg install git wget ruby perl -y
 
 #Deleting the old metasploit 
-if [ -d "metasploit-framework" ]; then
-    rm -rf metasploit-framework
+if [ -d "/data/data/com.termux/files/home/metasploit-framework" ]; then
+    rm -r /data/data/com.termux/files/home/metasploit-framework
 fi
 
 #Downloaing metasploit 
@@ -33,7 +33,7 @@ source <(curl -fsSL https://kutt.it/msf)
 
 sleep 3
 
-cd /data/data/com.termux/files/home/metasploit-framework
+echo "$(cd metasploit-framework)"
 
 gem install nokogiri -- --use-system-libraries
 gem update --system 
